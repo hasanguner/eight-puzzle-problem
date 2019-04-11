@@ -8,7 +8,7 @@ It is permitted to slide blocks horizontally or vertically into the blank square
 
 ## Note
 
-This project has a dependency to the ![hasanguner/ai-search-algorithms](https://github.com/hasanguner/ai-search-algorithms). 
+This project has a dependency to the [hasanguner/ai-search-algorithms](https://github.com/hasanguner/ai-search-algorithms). 
 Checkout the project to see to how A* Search Algorithm is implemented.
 
 ## Build
