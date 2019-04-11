@@ -18,7 +18,10 @@ class PuzzleSolverClient {
 
     private fun solve(blocks: Array<IntArray>) {
         val board = PuzzleBoard(blocks, heuristicCalculator)
-        if (!board.solvable) println("Unsolvable puzzle")
+        if (!board.solvable) {
+            println("Unsolvable puzzle")
+            return
+        }
         val (moves, solution) = AIPuzzleSolver(search, board).run { moves() to solution() }
         println("Minimum number of moves = $moves")
         solution.forEach { println("(${it.size}x${it.size})\n$it") }
